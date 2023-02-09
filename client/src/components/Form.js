@@ -10,7 +10,7 @@ export default function Form(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    await axios.post('http://localhost:3001/issues', formState)
+    await axios.post('http://localhost:3001/drinkType', formState)
     setFormState(initialState)
     props.getIssues()
   }
