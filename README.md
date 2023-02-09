@@ -19,9 +19,9 @@ jayasco246@gmail.com
 
 # Credits
 
-[Trello]()
+[Trello](https://trello.com/b/MiEffXEl/website-for-caffiene)
 
-[ERD]()
+[ERD(Has both model chart and flow chart, click on the pages at the bottom of the diagram to switch between them)](https://app.diagrams.net/#G18RJUK5B7L44ZCE6zv7TMByfzf0ERXBTU)
 
 [Img for Readme](https://thumbs.dreamstime.com/b/chemical-formula-caffeine-coffee-beans-background-close-up-100348619.jpg)
 
