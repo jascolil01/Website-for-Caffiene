@@ -1,4 +1,4 @@
-const DrinkType = require('../models/drink')
+const DrinkType = require('../models/drinkType')
 
 const createDrinkType = async (req,res)=>{
   try{
