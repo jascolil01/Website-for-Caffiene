@@ -6,6 +6,7 @@ import DrinkForm from './components/DrinkForm'
 import Drinks from './components/Drinks'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
+import AddDrink from './components/AddDrink'
 import { Routes,Route } from 'react-router-dom'
 
 const App=()=> {
@@ -19,6 +20,7 @@ const App=()=> {
       <Route path="/CaffieneType" element ={<CaffieneType/>}/>
       <Route path="/Drinks/DrinkForm" element ={<DrinkForm/>}/>
       <Route path="/Drinks" element ={<Drinks/>}/>
+      <Route path="/AddDrink" element ={<AddDrink/>}/>
     </Routes>
 </div>
   )
