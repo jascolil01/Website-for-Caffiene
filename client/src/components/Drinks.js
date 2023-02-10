@@ -1,7 +1,8 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Drinks() {
   return (
-    <div>Drinks</div>
+    <div><NavLink to ="/Drinks/DrinkForm">x</NavLink></div>
   )
 }
