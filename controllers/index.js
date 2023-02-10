@@ -1,8 +1,8 @@
-const DrinkType = require('../models/drinkType')
+const Drink = require('../models/drinks')
 
-const createDrinkType = async (req,res)=>{
+const createDrink = async (req,res)=>{
   try{
-    const drink = await new DrinkType(req.body)
+    const drink = await new Drink(req.body)
     await drink.save()
     return res.status(201).json({
       drink,
@@ -12,19 +12,19 @@ const createDrinkType = async (req,res)=>{
   }
 }
 
-const getAllDrinkTypes = async (req, res) => {
+const getAllDrink = async (req, res) => {
   try {
-      const drinks = await DrinkType.find()
+      const drinks = await Drink.find()
       return res.status(200).json({ drinks })
   } catch (error) {
       return res.status(500).send(error.message);
   }
 }
 
-const getDrinkTypeById = async (req, res) => {
+const getDrinkById = async (req, res) => {
   try {
       const { id } = req.params;
-      const drinks = await DrinkType.findById(id)
+      const drinks = await Drink.findById(id)
       if (drinks) {
           return res.status(200).json({ drinks });
       }
@@ -34,19 +34,19 @@ const getDrinkTypeById = async (req, res) => {
   }
 }
 
-const updateDrinkType = async (req, res) => {
+const updateDrink = async (req, res) => {
   try {
-      const drink = await DrinkType.findByIdAndUpdate(req.params.id, req.body, { new: true})
+      const drink = await Drink.findByIdAndUpdate(req.params.id, req.body, { new: true})
       res.status(200).json(drink)
   } catch (error) {
       return res.status(500).send(error.message);
   }
 }
 
-const deleteDrinkType = async (req, res) => {
+const deleteDrink = async (req, res) => {
   try {
       const { id } = req.params;
-      const deleted = await DrinkType.findByIdAndDelete(id)
+      const deleted = await Drink.findByIdAndDelete(id)
       if (deleted) {
           return res.status(200).send("Drink type deleted");
       }
@@ -57,9 +57,9 @@ const deleteDrinkType = async (req, res) => {
 }
 
 module.exports={
-  createDrinkType,
-  getAllDrinkTypes,
-  getDrinkTypeById,
-  deleteDrinkType,
-  updateDrinkType
+  createDrink,
+  getAllDrink,
+  getDrinkById,
+  deleteDrink,
+  updateDrink
 }
