@@ -5,6 +5,7 @@ import CaffieneType from './components/CaffieneType'
 import DrinkForm from './components/DrinkForm'
 import Drinks from './components/Drinks'
 import NavBar from './components/NavBar'
+import Home from './components/Home'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
     <DrinkForm />
     <Drinks />
     <NavBar />
+    <Home />
   </div>
   
 
