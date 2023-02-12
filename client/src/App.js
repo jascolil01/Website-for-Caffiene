@@ -9,6 +9,7 @@ import Home from './components/Home'
 import AddDrink from './components/AddDrink'
 import { Routes,Route } from 'react-router-dom'
 import axios from 'axios'
+import './App.css'
 
 
 const App=()=> {
@@ -17,7 +18,6 @@ const App=()=> {
   const getDrink = async () => {
     try {
       let res = await axios.get('http://localhost:3001/api/drink')
-      // console.log(res.data.drinks)
       setDrinks(res.data.drinks)
     } catch (err) {
       console.log(err)
@@ -29,7 +29,6 @@ const App=()=> {
   }, [])
   return (
 <div>
-
     <NavBar/>
     <Routes>
       <Route path="/" element ={<Home/>}/>
@@ -37,7 +36,7 @@ const App=()=> {
       <Route path="/CaffieneType/CaffieneForm" element ={<CaffieneForm/>}/>
       <Route path="/CaffieneType" element ={<CaffieneType/>}/>
       <Route path="/Drinks/DrinkForm" element ={<DrinkForm/>}/>
-      <Route path="/Drinks" element ={<Drinks/>}/>
+      <Route path="/Drinks" element ={<Drinks drinks={drinks}/>}/>
       <Route path="/AddDrink" element ={<AddDrink getDrink={getDrink}/>}/>
     </Routes>
 </div>
@@ -47,14 +46,4 @@ const App=()=> {
 export default App
 
 
-{/* <div>
-      {/* <h1>drink:</h1>
-      {drinks.map((drink) => (
-        <div key={drink._id}>
-          <h3>Type: {drink.name}</h3>
-          <p>Subject: {drink.description}</p>
-          <p>Message: {drink.image}</p>
-        </div>
-      ))} */}
-    // </div> */}
-    // <AddDrink getDrink={getDrink} />
+
