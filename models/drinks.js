@@ -8,7 +8,7 @@ const Drink = new Schema(
         image: { type: String, required: true },
         typeOfCaffiene:{ type: String, required: true },
         caffieneLevel: { type: String, required: true },
-        levelOfEffectiveness:{ type: Number, required: true }
+        levelOfEffectiveness:{ type: String, required: true }
   },
   {timestamps:true}
 )
