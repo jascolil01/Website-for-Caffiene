@@ -28,6 +28,12 @@ const main = async ()=>{
     {name:"White Tea", description:"May help wiht weight loss!!", image:'https://thumbs.dreamstime.com/b/serving-white-tea-9389070.jpg', typeOfCaffiene:"Tea", caffieneLevel:"47mg" , levelOfEffectiveness:"2"},
     {name:"Oolong Tea", description:"Oolong tea is produced mainly in China and Taiwan and is only partially oxidized. This type of tea can range from tasting similar to a fresh green tea, The flavor can vary widely, depending on where the tea leaves are grown and how the tea is made", image:'https://thumbs.dreamstime.com/b/oolong-tea-cup-accessories-38931010.jpg', typeOfCaffiene:"Tea", caffieneLevel:"47mg", levelOfEffectiveness:"2"},
     {name:"Herbal Tea", description:"Herbal tea is simply the combination of boiling water and botanicals like fruits, flowers, barks, herbs, mints, spices, roots, berries and seeds", image:'https://media.istockphoto.com/id/1166609941/photo/herbal-teas.jpg?s=1024x1024&w=is&k=20&c=nRiOpIbG26DVz-Upr8iINjwjrJKlYPTjL1nxJoD7Jb8=', typeOfCaffiene:"Tea", caffieneLevel:"47mg" , levelOfEffectiveness:"2"},
+
+    {name:"Mountain Dew",description:"Mountain is a pretty famous soda",image:'https://thumbs.dreamstime.com/b/london-uk-june-bottle-mountain-dew-drink-ice-isolated-white-mountain-dew-citrus-flavored-soft-drink-produced-background-94138888.jpg', typeOfCaffiene:"Soda", caffieneLevel:"55mg", levelOfEffectiveness:"1"},
+    {name:"Coca-Cola", description:"Has trace amounts of soda", image:'https://thumbs.dreamstime.com/b/wet-can-coca-cola-24193085.jpg', typeOfCaffiene:"Soda", caffieneLevel:"8.5mg", levelOfEffectiveness:"1"},
+    {name:"Pepsi", description:"One of the most recognizable brands", image:'https://thumbs.dreamstime.com/b/pepsi-can-white-background-chisinau-moldova-november-pepsi-can-white-background-pepsi-carbonated-soft-drink-produced-131299337.jpg', typeOfCaffiene:"Soda", caffieneLevel:"10mg" , levelOfEffectiveness:"1"},
+    {name:"Dr.Pepper", description:"This soda is very hit or miss with people, you either love it or hate it", image:'https://c8.alamy.com/comp/EJ9Y36/samara-russia-october-22th-2014-product-shot-of-dr-pepper-can-isolated-EJ9Y36.jpg', typeOfCaffiene:"Soda", caffieneLevel:"12mg", levelOfEffectiveness:"1"},
+    {name:"Sun Drop", description:"https://target.scene7.com/is/image/Target/GUEST_03b722fb-508e-460a-9767-c6320cb845fd?wid=488&hei=488&fmt=pjpeg'", typeOfCaffiene:"Soda", caffieneLevel:"5mg" , levelOfEffectiveness:"1"},
   ]
 
   await Drink.insertMany(drinks)
