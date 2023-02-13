@@ -29,10 +29,9 @@ export default function AddDrink(props) {
       <input type="text" id="name"onChange={handleChange} value={formState.name}/>
 
       <label htmlFor='description'>Tell us about the drink</label>
-      <input type="text" id="description"onChange={handleChange} value={formState.description}/>
-      <textarea id="description" cols="30" rows="10"></textarea>
+      <textarea id="description" cols="30" rows="10"onChange={handleChange} value={formState.description}></textarea>
 
-      <label htmlFor='image'>Image</label>
+      <label htmlFor='image'>Image(copy an image url and place it here):</label>
       <input type="text" id="image"onChange={handleChange} value={formState.image}/>
 
       <label htmlFor='typeOfCaffiene'>Name of the Drink</label>
@@ -48,7 +47,14 @@ export default function AddDrink(props) {
       <input type="text" id="caffieneLevel"onChange={handleChange} value={formState.caffieneLevel}/>
 
       <label htmlFor='levelOfEffectiveness'>How well did it work?</label>
-      <input type="text" id='levelOfEffectiveness'onChange={handleChange} value={formState.levelOfEffectiveness}/>
+      <select id ="typeOfCaffiene"onChange={handleChange} value={formState.typeOfCaffiene}>
+      <option value="">select</option>
+        <option value="1">☕️</option>
+        <option value="2">☕️☕️</option>
+        <option value="3">☕️☕️☕️</option>
+        <option value="4">☕️☕️☕️☕️</option>
+        <option value="5">☕️☕️☕️☕️☕️</option>
+      </select>
      
       <button type='submit'> Brew it up!</button>
     </form>
