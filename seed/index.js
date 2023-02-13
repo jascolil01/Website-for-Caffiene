@@ -33,7 +33,7 @@ const main = async ()=>{
     {name:"Coca-Cola", description:"Has trace amounts of soda", image:'https://thumbs.dreamstime.com/b/wet-can-coca-cola-24193085.jpg', typeOfCaffiene:"Soda", caffieneLevel:"8.5mg", levelOfEffectiveness:"1"},
     {name:"Pepsi", description:"One of the most recognizable brands", image:'https://thumbs.dreamstime.com/b/pepsi-can-white-background-chisinau-moldova-november-pepsi-can-white-background-pepsi-carbonated-soft-drink-produced-131299337.jpg', typeOfCaffiene:"Soda", caffieneLevel:"10mg" , levelOfEffectiveness:"1"},
     {name:"Dr.Pepper", description:"This soda is very hit or miss with people, you either love it or hate it", image:'https://c8.alamy.com/comp/EJ9Y36/samara-russia-october-22th-2014-product-shot-of-dr-pepper-can-isolated-EJ9Y36.jpg', typeOfCaffiene:"Soda", caffieneLevel:"12mg", levelOfEffectiveness:"1"},
-    {name:"Sun Drop", description:"https://target.scene7.com/is/image/Target/GUEST_03b722fb-508e-460a-9767-c6320cb845fd?wid=488&hei=488&fmt=pjpeg'", typeOfCaffiene:"Soda", caffieneLevel:"5mg" , levelOfEffectiveness:"1"},
+    {name:"Sun Drop", description:"Very small amount of caffiene", image:'https://target.scene7.com/is/image/Target/GUEST_03b722fb-508e-460a-9767-c6320cb845fd?wid=488&hei=488&fmt=pjpeg', typeOfCaffiene:"Soda", caffieneLevel:"5mg" , levelOfEffectiveness:"2"},
   ]
 
   await Drink.insertMany(drinks)
