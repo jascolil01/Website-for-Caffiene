@@ -1,13 +1,12 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const DrinkType = new Schema(
+const Comment = new Schema(
   {
     name: { type: String, required: true },
-        description: { type: String, required: true },
-        typeOfCaffiene:{ type: String, required: true },
+      comment:{ type: String, required: true }
   },
   {timestamps:true}
 )
 
-module.exports= mongoose.model('DrinkType', DrinkType)
+module.exports= mongoose.model('Comment', Comment)
