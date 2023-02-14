@@ -1,16 +1,20 @@
-export default function Drinks(props) {
+import axios from 'axios'
+import { NavLink } from 'react-router-dom'
 
+
+export default function Drinks(props) {
+  const handleDelete = async(drinkId) =>{
+    await axios.delete(`http://localhost:3001/api/drink/${drinkId}`)
+    props.getDrink()
+  }
   return (
     <div>
     <h1>Drink list:</h1>
-    {props.drinks.map((drink)=>(
+    {props.drinks.map((drink, index)=>(
       <div key={drink._id}>
-      <h2>Name: {drink.name}</h2>
-      <h2>Caffiene Type: {drink.caffieneType}</h2>
-      <h2>How good is it?: {drink.levelOfEffectiveness}</h2>
-      <h2>image: {drink.image}</h2>
-      <h2>description: {drink.description}</h2>
-      <h2>How much Caffiene: {drink.caffieneLevel}</h2>
+     <h2>Name: {drink.name}</h2>
+     <NavLink  to="/DrinkForm">View More</NavLink>
+     <button onClick={()=> handleDelete(drink._id)}>Delete</button>
       </div>
     ))}
    
@@ -18,3 +22,5 @@ export default function Drinks(props) {
       
   )
 }
+
+

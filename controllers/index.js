@@ -46,7 +46,7 @@ const updateDrink = async (req, res) => {
 
 const deleteDrink = async (req, res) => {
   try {
-      const { id } = req.params;
+      const {id} = req.params;
       const deleted = await Drink.findByIdAndDelete(id)
       if (deleted) {
           return res.status(200).send("Drink deleted");

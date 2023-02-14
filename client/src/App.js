@@ -36,7 +36,7 @@ const App=()=> {
       <Route path="/CaffieneType/CaffieneForm" element ={<CaffieneForm/>}/>
       <Route path="/CaffieneType" element ={<CaffieneType/>}/>
       <Route path="/Drinks/DrinkForm" element ={<DrinkForm/>}/>
-      <Route path="/Drinks" element ={<Drinks drinks={drinks}/>}/>
+      <Route path="/Drinks" element ={<Drinks getDrink={getDrink} drinks={drinks}/>}/>
       <Route path="/AddDrink" element ={<AddDrink getDrink={getDrink}/>}/>
     </Routes>
 </div>
