@@ -25,9 +25,9 @@ const getAllDrink = async (req, res) => {
 const getDrinkById = async (req, res) => {
   try {
       const { id } = req.params;
-      const drinks = await Drink.findById(id)
-      if (drinks) {
-          return res.status(200).json({ drinks });
+      const drink = await Drink.findById(id)
+      if (drink) {
+          return res.status(200).json({ drink });
       }
       return res.status(404).send('Drink with the specified ID does not exists');
   } catch (error) {

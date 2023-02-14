@@ -23,7 +23,7 @@ const App=()=> {
       console.log(err)
     }
   }
-
+ 
   useEffect(() => {
     getDrink()
   }, [])
@@ -35,7 +35,7 @@ const App=()=> {
       <Route path="/About" element ={<About/>}/>
       <Route path="/CaffieneType/CaffieneForm" element ={<CaffieneForm/>}/>
       <Route path="/CaffieneType" element ={<CaffieneType/>}/>
-      <Route path="/Drinks/DrinkForm" element ={<DrinkForm/>}/>
+      <Route path="/DrinkForm/:id" element ={<DrinkForm drinks={drinks}/>}/>
       <Route path="/Drinks" element ={<Drinks getDrink={getDrink} drinks={drinks}/>}/>
       <Route path="/AddDrink" element ={<AddDrink getDrink={getDrink}/>}/>
     </Routes>

@@ -19,3 +19,16 @@ form {
   padding: 20px;
   margin: 20px;
 }
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#drinkList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: inherit;
+  width: fit-content;
+}
