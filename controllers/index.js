@@ -35,6 +35,19 @@ const getDrinkById = async (req, res) => {
   }
 }
 
+const getDrinkByGenre = async (req, res) => {
+  try {
+      const { typeOfCaffiene } = req.params;
+      const drink = await Drink.find({ "typeOfCaffiene" : { $exists : true } })
+      if (drink) {
+          return res.status(200).json({ drink });
+      }
+      return res.status(404).send('Drink with the specified ID does not exists');
+  } catch (error) {
+      return res.status(500).send(error.message);
+  }
+}
+
 const updateDrink = async (req, res) => {
   try {
       const drink = await Drink.findByIdAndUpdate(req.params.id, req.body, { new: true})
@@ -122,5 +135,6 @@ module.exports={
   getAllComment,
   getCommentById,
   deleteComment,
-  updateComment
+  updateComment,
+  getDrinkByGenre
 }

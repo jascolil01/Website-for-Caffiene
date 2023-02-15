@@ -15,6 +15,8 @@ router.delete('/drink/:id', controllers.deleteDrink)
 
 router.get('/drink/:id', controllers.getDrinkById)
 
+router.get('/drink/:typeOfCaffiene', controllers.getDrinkByGenre)
+
 
 
 router.post('/comment', controllers.createComment)

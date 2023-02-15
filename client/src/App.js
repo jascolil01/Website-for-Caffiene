@@ -35,8 +35,8 @@ const App=()=> {
     <Routes>
       <Route path="/" element ={<Home/>}/>
       <Route path="/About" element ={<About/>}/>
-      <Route path="/CaffieneType/CaffieneForm" element ={<CaffieneForm/>}/>
-      <Route path="/CaffieneType" element ={<CaffieneType/>}/>
+      <Route path="/CaffieneForm" element ={<CaffieneForm drinks={drinks}/>}/>
+      <Route path="/CaffieneType" element ={<CaffieneType drinks={drinks}/>}/>
       <Route path="/DrinkForm/:id" element ={<DrinkForm drinks={drinks}/>}/>
       <Route path="/EditDrink/:id" element ={<EditDrink />}/>
       <Route path="/Drinks" element ={<Drinks getDrink={getDrink} drinks={drinks}/>}/>
