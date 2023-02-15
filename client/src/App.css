@@ -29,6 +29,8 @@ img {
 #drinkList {
   display: flex;
   flex-direction: column;
-  flex-wrap: inherit;
-  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-right: 20px;
 }

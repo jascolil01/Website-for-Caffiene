@@ -6,10 +6,12 @@ import DrinkForm from './components/DrinkForm'
 import Drinks from './components/Drinks'
 import NavBar from './components/NavBar'
 import Home from './components/Home'
+import EditDrink from './components/EditDrink'
 import AddDrink from './components/AddDrink'
 import { Routes,Route } from 'react-router-dom'
 import axios from 'axios'
 import './App.css'
+
 
 
 const App=()=> {
@@ -36,6 +38,7 @@ const App=()=> {
       <Route path="/CaffieneType/CaffieneForm" element ={<CaffieneForm/>}/>
       <Route path="/CaffieneType" element ={<CaffieneType/>}/>
       <Route path="/DrinkForm/:id" element ={<DrinkForm drinks={drinks}/>}/>
+      <Route path="/EditDrink/:id" element ={<EditDrink />}/>
       <Route path="/Drinks" element ={<Drinks getDrink={getDrink} drinks={drinks}/>}/>
       <Route path="/AddDrink" element ={<AddDrink getDrink={getDrink}/>}/>
     </Routes>
