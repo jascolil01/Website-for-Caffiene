@@ -52,11 +52,18 @@ useEffect(()=>{
 
   
   return (
-    <div>
+    <div className='info-page'>
+      <div className='info-section'>
+
+        <img src={info.image}/>
+        <h1>Name of the drink:{info.name}</h1>
         <h2>Caffiene Type: {info.typeOfCaffiene}</h2>
         <h2>How good is it? {info.levelOfEffectiveness}/5</h2>
         <h2>Description: {info.description}</h2>
         <h2>How much Caffiene: {info.caffieneLevel}</h2>
+
+      </div>
+        
 
         <form onSubmit={handleSubmit}>
   
@@ -76,13 +83,16 @@ useEffect(()=>{
     value={formState.comment}
   ></textarea>
   <button type="submit">Send</button>
-{comment.map((x)=>(
+  <container>
+    {comment.map((x)=>(
   <div className='comment' key={x._id}>
     <h3>Name:{x.name}</h3>
     <h4>Comment:{x.comment}</h4>
     <button onClick={()=> handleDelete(x._id)}>Delete</button>
   </div>
 ))}
+  </container>
+
 </form>
      </div>
   )

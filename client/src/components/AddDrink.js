@@ -23,15 +23,15 @@ export default function AddDrink() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="addDrink">
        <label htmlFor='name'>Name of the Drink</label>
       <input type="text" id="name"onChange={handleChange} value={formState.name}/>
 
       <label htmlFor='description'>Tell us about the drink</label>
       <textarea id="description" cols="30" rows="10"onChange={handleChange} value={formState.description}></textarea>
 
-      <label htmlFor='image'>Image(copy an image url and place it here):</label>
-      <input type="text" id="image"onChange={handleChange} value={formState.image}/>
+      <label htmlFor='image'>Image:</label>
+      <input type="text"  placeholder="copy an image url and place it here" id="image"onChange={handleChange} value={formState.image}/>
 
       <label htmlFor='typeOfCaffiene'>Name of the Drink</label>
       <select id ="typeOfCaffiene"onChange={handleChange} value={formState.typeOfCaffiene}>

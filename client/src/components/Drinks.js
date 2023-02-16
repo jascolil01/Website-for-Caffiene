@@ -10,12 +10,13 @@ export default function Drinks(props) {
 
  
   return (
-    <div>
-    <h1>Drink list:</h1>
+    <div id="drinkList">
     {props.drinks.map((drink)=>(
-      <div id="drinkList" key={drink._id}>
+      <div id="drink" className={drink.typeOfCaffiene} key={drink._id}>
         <img src={drink.image}/>
      <h2>Name: {drink.name}</h2>
+     <div id='bottom-text'>
+
      <NavLink  to={{
       pathname:`/DrinkForm/${drink._id}`
      }}>View More</NavLink>
@@ -23,6 +24,9 @@ export default function Drinks(props) {
       pathname:`/EditDrink/${drink._id}`
      }}>Edit</NavLink>
      <button onClick={()=> handleDelete(drink._id)}>Delete</button>
+
+     </div>
+     
       </div>
     ))}
     </div>

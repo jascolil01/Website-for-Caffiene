@@ -33,15 +33,15 @@ const handleUpdate=async()=>{
   },[id])
 
   return (
-    <form onSubmit={handleUpdate}>
+    <form id="editDrink" onSubmit={handleUpdate}>
        <label htmlFor='name'>Name of the Drink</label>
       <input type="text" id="name"onChange={handleChange} value={formState.name}/>
 
       <label htmlFor='description'>Tell us about the drink</label>
       <textarea id="description" cols="30" rows="10"onChange={handleChange} value={formState.description}></textarea>
 
-      <label htmlFor='image'>Image(copy an image url and place it here):</label>
-      <input type="text" id="image"onChange={handleChange} value={formState.image}/>
+      <label htmlFor='image'>Image:</label>
+      <input type="text" id="image"onChange={handleChange} placeholder="copy an image url and place it here" value={formState.image}/>
 
       <label htmlFor='typeOfCaffiene'>Name of the Drink</label>
       <select id ="typeOfCaffiene"onChange={handleChange} value={formState.typeOfCaffiene}>
@@ -56,7 +56,7 @@ const handleUpdate=async()=>{
       <input type="text" id="caffieneLevel"onChange={handleChange} value={formState.caffieneLevel}/>
 
       <label htmlFor='levelOfEffectiveness'>How well did it work?</label>
-      <select id ="typeOfCaffiene"onChange={handleChange} value={formState.typeOfCaffiene}>
+      <select id ="levelOfEffectiveness"onChange={handleChange} value={formState.levelOfEffectiveness}>
       <option value="">select</option>
         <option value="1">☕️</option>
         <option value="2">☕️☕️</option>

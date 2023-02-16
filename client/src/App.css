@@ -1,36 +1,154 @@
 body {
   margin: 0;
   text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  background-image: linear-gradient(to bottom right, #e8dad0, #d5bbaa, #c29d84, #af7f5d, #8d6346);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 20px;
-  width: 100vw;
-  height: 30vh;
+  font-family: 'Julee', cursive;
 }
 
 #navbar {
-  border: 1px solid red;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px;
+  border: 1px solid #c4a189;
+  border-radius: 30px;
+  font-size: 2rem;
+  padding: 15px;
+  background-color: bisque;
+  color: #36261a;
+  text-decoration: none;
 }
 
 img {
   width: 200px;
   height: 200px;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 #drinkList {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px;
+}
+
+#drink {
+  border: 1px solid black;
+  border-radius: 20px;
+  height: fit-content;
+}
+
+.Espresso {
+  background-image: linear-gradient(to left, #a97653, #835b40, #573d2b);
+}
+
+.Coffee {
+  background-image: linear-gradient(to left, #674833, #36261a, #100b08);
+}
+
+.Energy {
+  background-image: linear-gradient(to left, lightblue, blue, green, lightgreen);
+}
+
+.Tea {
+  background-image: linear-gradient(to left, #4C1208, #a7db42, #c48e69)
+}
+
+.Soda {
+  background-image: linear-gradient(to left, red, blue, red)
+}
+
+
+
+button {
+  font-size: 30px;
+  border-radius: 20px;
+  color: #835b40;
+}
+
+h5 {
+  margin-bottom: 20px;
+}
+
+#bottom-text {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.home {
+  width: 100%;
+  background-image: linear-gradient(to right, #573d2b, #c29d84);
+  border-radius: 20px;
+  font-size: 40px;
+  color: #d2b7a4;
+  text-decoration: none;
+}
+
+#home {
+  color: #36261a;
+  font-size: 40px;
+}
+
+a {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.info-page {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: baseline;
   align-items: center;
-  width: 200px;
-  margin-right: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 500px;
+}
+
+.info-section {
+  background-color: #5c412d;
+  border-radius: 20px;
+}
+
+main {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  height: 1000px;
+}
+
+.addDrink,
+#editDrink {
+  width: fit-content;
+  padding: 20px;
+  font-size: 60px;
+  margin: 0;
+  background-image: linear-gradient(to bottom, #c29d84, #b28363, #986b4b, #78543b);
+  border-radius: 20px;
+  justify-content: center;
+  height: 1000px;
+}
+
+input,
+select,
+textarea,
+label {
+  font-size: 20px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+label {
+  background-color: #c29d84;
+  font-size: 40px;
 }

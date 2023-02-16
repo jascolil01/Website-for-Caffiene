@@ -32,9 +32,10 @@ const App=()=> {
     getDrink()
   }, [])
   return (
-<div>
-    <NavBar/>
-    <Routes>
+<div className='app'>
+  <header><NavBar/></header>
+  <main>
+  <Routes>
       <Route path="/" element ={<Home/>}/>
       <Route path="/About" element ={<About/>}/>
       <Route path="/CaffieneForm" element ={<CaffieneForm drinks={drinks}/>}/>
@@ -44,6 +45,7 @@ const App=()=> {
       <Route path="/Drinks" element ={<Drinks getDrink={getDrink} drinks={drinks}/>}/>
       <Route path="/AddDrink" element ={<AddDrink getDrink={getDrink}/>}/>
     </Routes>
+  </main>
 </div>
   )
 }

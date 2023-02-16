@@ -8,7 +8,7 @@ This is my repo for the website I built in **MERN (Mongo, Express, React, Nodejs
 
 # Functionality
 
-This page allows you to see What caffienes about, the different kinds of caffiene, look at some drinks and even CRUD (Create, Read, Update, Delete) your own drinks. this is acheived through backend routes and through functions built in on the front end to call upon these routes. there is a functional navigation bar that allows you to click through all the pages availible.
+This page allows you to see What caffienes about, the different kinds of caffiene, look at some drinks and even CRUD (Create, Read, Update, Delete) your own drinks. Lastly, you can even leave comments on your favorite drinks. this is acheived through backend routes and through functions built in on the front end to call upon these routes. there is a functional navigation bar that allows you to click through all the pages availible.
 
 # Contact Me
 
