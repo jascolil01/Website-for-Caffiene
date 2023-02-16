@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 
 const Comment = new Schema(
   {
+    drinkId:{type:String,required:true},
     name: { type: String, required: true },
       comment:{ type: String, required: true }
   },

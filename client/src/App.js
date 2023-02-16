@@ -25,6 +25,8 @@ const App=()=> {
       console.log(err)
     }
   }
+
+ 
  
   useEffect(() => {
     getDrink()

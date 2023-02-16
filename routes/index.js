@@ -27,6 +27,8 @@ router.put('/comment/:id', controllers.updateComment)
 
 router.delete('/comment/:id', controllers.deleteComment)
 
+router.get('/comment/drink/:id', controllers.getCommentByDrink)
+
 router.get('/comment/:id', controllers.getCommentById)
 
 module.exports = router;
