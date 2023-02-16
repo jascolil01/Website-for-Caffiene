@@ -3,15 +3,19 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom'
 
 export default function DrinkForm(props) {
+
+  let {id}=useParams()
+  
   const initialState = {
     name: '',
     comment: '',
+    drinkId:`${id}`
   }
   const [comment,setComment]=useState([])
   const [formState, setFormState] = useState(initialState)
 
   const [info,setInfo]=useState({})
-  let {id}=useParams()
+ 
 
   const getDrinkById = async() =>{
     const res = await axios.get(`http://localhost:3001/api/drink/${id}`)
@@ -28,7 +32,7 @@ export default function DrinkForm(props) {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    await axios.post(`http://localhost:3001/api/comment/${id}`, formState)
+    await axios.post(`http://localhost:3001/api/comment`, formState)
     setFormState(initialState)
     props.getComment()
   }

@@ -93,7 +93,7 @@ const getAllComment = async (req, res) => {
 const getCommentByDrink=async(req,res)=>{
   try{
     const id = req.params.id
-    const comment = await comment.find({drinkId:id})
+    const comment = await Comment.find({drinkId:id})
     return res.status(200).send(comment)
   } catch (error) {
     return res.status(500).send(error.message);
