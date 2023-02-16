@@ -17,10 +17,12 @@ export default function Drinks(props) {
      <h2>Name: {drink.name}</h2>
      <div id='bottom-text'>
 
-     <NavLink  to={{
+     <NavLink
+     className="drink"  to={{
       pathname:`/DrinkForm/${drink._id}`
      }}>View More</NavLink>
-      <NavLink  to={{
+      <NavLink 
+      className="drink"  to={{
       pathname:`/EditDrink/${drink._id}`
      }}>Edit</NavLink>
      <button onClick={()=> handleDelete(drink._id)}>Delete</button>

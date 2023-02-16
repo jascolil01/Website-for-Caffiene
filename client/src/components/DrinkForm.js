@@ -56,7 +56,7 @@ useEffect(()=>{
       <div className='info-section'>
 
         <img src={info.image}/>
-        <h1>Name of the drink:{info.name}</h1>
+        <h1>Name of the drink: {info.name}</h1>
         <h2>Caffiene Type: {info.typeOfCaffiene}</h2>
         <h2>How good is it? {info.levelOfEffectiveness}/5</h2>
         <h2>Description: {info.description}</h2>
@@ -65,7 +65,7 @@ useEffect(()=>{
       </div>
         
 
-        <form onSubmit={handleSubmit}>
+  <form className="comments"onSubmit={handleSubmit}>
   
   <label htmlFor="name">Name:</label>
   <input
@@ -86,8 +86,8 @@ useEffect(()=>{
   <container>
     {comment.map((x)=>(
   <div className='comment' key={x._id}>
-    <h3>Name:{x.name}</h3>
-    <h4>Comment:{x.comment}</h4>
+    <h3>Name: {x.name}</h3>
+    <h4>Comment: {x.comment}</h4>
     <button onClick={()=> handleDelete(x._id)}>Delete</button>
   </div>
 ))}
