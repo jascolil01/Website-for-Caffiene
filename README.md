@@ -8,7 +8,7 @@ This is my repo for the website I built in **MERN (Mongo, Express, React, Nodejs
 
 # Functionality
 
-You as a user, will be able to find different kinds of caffienated drinks by a search query or by genre of caffeine. There will also be a comment section too so you can leave a nice or not so nice comment on different drinks
+This page allows you to see What caffienes about, the different kinds of caffiene, look at some drinks and even CRUD (Create, Read, Update, Delete) your own drinks. this is acheived through backend routes and through functions built in on the front end to call upon these routes. there is a functional navigation bar that allows you to click through all the pages availible.
 
 # Contact Me
 
@@ -24,5 +24,7 @@ jayasco246@gmail.com
 [ERD(Has both model chart and flow chart, click on the pages at the bottom of the diagram to switch between them)](https://app.diagrams.net/#G18RJUK5B7L44ZCE6zv7TMByfzf0ERXBTU)
 
 [Img for Readme](https://thumbs.dreamstime.com/b/chemical-formula-caffeine-coffee-beans-background-close-up-100348619.jpg)
+
+**Links to articles are on the pages**
 
 

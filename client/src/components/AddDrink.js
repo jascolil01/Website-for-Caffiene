@@ -1,7 +1,7 @@
 import React, {useState } from 'react'
 import axios from 'axios'
 
-export default function AddDrink(props) {
+export default function AddDrink() {
   const initialState = {
     name:'',
     description:'',
@@ -16,7 +16,6 @@ export default function AddDrink(props) {
     event.preventDefault()
     await axios.post('http://localhost:3001/api/drink', formState)
     setFormState(initialState)
-    props.getDrink()
   }
 
   const handleChange = (event) => {
@@ -47,7 +46,7 @@ export default function AddDrink(props) {
       <input type="text" id="caffieneLevel"onChange={handleChange} value={formState.caffieneLevel}/>
 
       <label htmlFor='levelOfEffectiveness'>How well did it work?</label>
-      <select id ="typeOfCaffiene"onChange={handleChange} value={formState.typeOfCaffiene}>
+      <select id ="levelOfEffectiveness"onChange={handleChange} value={formState.levelOfEffectiveness}>
       <option value="">select</option>
         <option value="1">☕️</option>
         <option value="2">☕️☕️</option>

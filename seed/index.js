@@ -21,7 +21,7 @@ const main = async ()=>{
     {name:"Red Bull", description:"One of the more iconic energy drinks, comes in a variety of flavors and styles", image:'https://thumbs.dreamstime.com/b/choosing-red-bull-energy-drink-20956344.jpg', typeOfCaffiene:"Energy Drink", caffieneLevel:"80 mg", levelOfEffectiveness:"4"},
     {name:"Rockstar", description:"Comes in a variety of flavors", image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvdmkAczKebOhqbVJWiL7VavE7baivCIOe7g&usqp=CAU', typeOfCaffiene:"Energy Drink", caffieneLevel:"About 160 mg" , levelOfEffectiveness:"4"},
     {name:"NOS", description:"Fun Fact, this company is the first company to be a automotive companyto release an energy drink", image:'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/8-7-08_-_NOS%21_%282753598084%29.jpg/220px-8-7-08_-_NOS%21_%282753598084%29.jpg', typeOfCaffiene:"Energy Drink", caffieneLevel:"About 160mg", levelOfEffectiveness:"4"},
-    {name:"Venom", description:"This drink is pretty unique, isn't sold in alot of places but has the same amount of caffiene as everything eles on the list", image:'https://thumbs.dreamstime.com/b/closeup-glass-americano-hot-coffee-isolated-white-background-145865072.jpg', typeOfCaffiene:"Energy Drink", caffieneLevel:"160mg" , levelOfEffectiveness:"4"},
+    {name:"Venom", description:"This drink is pretty unique, isn't sold in alot of places but has the same amount of caffiene as everything eles on the list", image:'image.png', typeOfCaffiene:"Energy Drink", caffieneLevel:"160mg" , levelOfEffectiveness:"4"},
 
     {name:"Black Tea",description:"Pretty common for tea, it is said to promote heart health!",image:'https://thumbs.dreamstime.com/b/black-tea-isolated-white-background-40622400.jpg', typeOfCaffiene:"Tea", caffieneLevel:"47mg", levelOfEffectiveness:"2"},
     {name:"Green Tea", description:"Fun Fact, may improve brain function", image:'https://thumbs.dreamstime.com/z/green-tea-mug-teapot-wood-table-70258987.jpg', typeOfCaffiene:"Tea", caffieneLevel:"47mg", levelOfEffectiveness:"2"},
@@ -33,7 +33,7 @@ const main = async ()=>{
     {name:"Coca-Cola", description:"Has trace amounts of soda", image:'https://thumbs.dreamstime.com/b/wet-can-coca-cola-24193085.jpg', typeOfCaffiene:"Soda", caffieneLevel:"8.5mg", levelOfEffectiveness:"1"},
     {name:"Pepsi", description:"One of the most recognizable brands", image:'https://thumbs.dreamstime.com/b/pepsi-can-white-background-chisinau-moldova-november-pepsi-can-white-background-pepsi-carbonated-soft-drink-produced-131299337.jpg', typeOfCaffiene:"Soda", caffieneLevel:"10mg" , levelOfEffectiveness:"1"},
     {name:"Dr.Pepper", description:"This soda is very hit or miss with people, you either love it or hate it", image:'https://c8.alamy.com/comp/EJ9Y36/samara-russia-october-22th-2014-product-shot-of-dr-pepper-can-isolated-EJ9Y36.jpg', typeOfCaffiene:"Soda", caffieneLevel:"12mg", levelOfEffectiveness:"1"},
-    {name:"Sun Drop", description:"Very small amount of caffiene", image:'https://target.scene7.com/is/image/Target/GUEST_03b722fb-508e-460a-9767-c6320cb845fd?wid=488&hei=488&fmt=pjpeg', typeOfCaffiene:"Soda", caffieneLevel:"5mg" , levelOfEffectiveness:"2"},
+    {name:"Sun Drop", description:"Very small amount of caffiene", image:'https://target.scene7.com/is/image/Target/GUEST_03b722fb-508e-460a-9767-c6320cb845fd?wid=488&hei=488&fmt=pjpeg', typeOfCaffiene:"Soda", caffieneLevel:"5mg" , levelOfEffectiveness:"2"}
   ]
 
   await Drink.insertMany(drinks)

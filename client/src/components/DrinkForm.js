@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom'
 export default function DrinkForm(props) {
 
   let {id}=useParams()
-  
+
   const initialState = {
     name: '',
     comment: '',
@@ -30,8 +30,7 @@ export default function DrinkForm(props) {
     }
   }
 
-  const handleSubmit = async (event) => {
-    event.preventDefault()
+  const handleSubmit = async () => {
     await axios.post(`http://localhost:3001/api/comment`, formState)
     setFormState(initialState)
     props.getComment()
@@ -40,8 +39,11 @@ export default function DrinkForm(props) {
   const handleChange = (event) => {
     setFormState({ ...formState, [event.target.id]: event.target.value })
   }
+  
+  const handleDelete = async(commentId) =>{
+    await axios.delete(`http://localhost:3001/api/comment/${commentId}`)
+  }
 
-console.log(comment)
 useEffect(()=>{
   getDrinkById()
   getComment()
@@ -74,13 +76,11 @@ useEffect(()=>{
     value={formState.comment}
   ></textarea>
   <button type="submit">Send</button>
-
-
-
 {comment.map((x)=>(
   <div className='comment' key={x._id}>
-    <h1>Name:{x.name}</h1>
-    <h2>Comment:{x.comment}</h2>
+    <h3>Name:{x.name}</h3>
+    <h4>Comment:{x.comment}</h4>
+    <button onClick={()=> handleDelete(x._id)}>Delete</button>
   </div>
 ))}
 </form>
