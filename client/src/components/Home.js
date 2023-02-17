@@ -4,7 +4,7 @@ const Home=()=>{
   return (
     <div className="home">
       <h1>Welcome to The Coffee Place</h1>
-      <h2>On this website you will be able to look up you favorite kinds of caffienated drinks!</h2>
+      <h2>On this website you will be able to look up you favorite kinds of caffeinated drinks!</h2>
       <h3>Can't find a drink you like? simple fill out
       <NavLink
       id="home"
