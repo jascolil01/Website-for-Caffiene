@@ -37,8 +37,8 @@ const getDrinkById = async (req, res) => {
 
 const getDrinkByGenre = async (req, res) => {
   try {
-      const { typeOfCaffiene } = req.params;
-      const drink = await Drink.find({ "typeOfCaffiene" : { $exists : true } })
+      const { typeOfCaffeine } = req.params;
+      const drink = await Drink.find({ "typeOfCaffeine" : { $exists : true } })
       if (drink) {
           return res.status(200).json({ drink });
       }

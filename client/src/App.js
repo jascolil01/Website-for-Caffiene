@@ -1,7 +1,6 @@
 import { useEffect,useState } from 'react'
 import About from './components/About'
-import CaffieneForm from './components/CaffieneForm'
-import CaffieneType from './components/CaffieneType'
+import CaffeineType from './components/CaffieneType'
 import DrinkForm from './components/DrinkForm'
 import Drinks from './components/Drinks'
 import NavBar from './components/NavBar'
@@ -38,8 +37,7 @@ const App=()=> {
   <Routes>
       <Route path="/" element ={<Home/>}/>
       <Route path="/About" element ={<About/>}/>
-      <Route path="/CaffieneForm" element ={<CaffieneForm drinks={drinks}/>}/>
-      <Route path="/CaffieneType" element ={<CaffieneType drinks={drinks}/>}/>
+      <Route path="/CaffeineType" element ={<CaffeineType drinks={drinks}/>}/>
       <Route path="/DrinkForm/:id" element ={<DrinkForm drinks={drinks}/>}/>
       <Route path="/EditDrink/:id" element ={<EditDrink />}/>
       <Route path="/Drinks" element ={<Drinks getDrink={getDrink} drinks={drinks}/>}/>

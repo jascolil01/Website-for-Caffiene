@@ -9,8 +9,8 @@ const Drink = new Schema(
     name: { type: String, required: true },
         description: { type: String, required: true },
         image: { type: String, required: true },
-        typeOfCaffiene:{ type: String, required: true },
-        caffieneLevel: { type: String, required: true },
+        typeOfCaffeine:{ type: String, required: true },
+        caffeineLevel: { type: String, required: true },
         levelOfEffectiveness:{ type: String, required: true },
 
   },

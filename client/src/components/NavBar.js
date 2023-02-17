@@ -5,7 +5,7 @@ export default function NavBar() {
     <nav>
       <NavLink  id = "navbar"to="/">Home</NavLink>
       <NavLink id = "navbar" to="/About">About</NavLink>
-      <NavLink  id = "navbar"to="/CaffieneType">Different Kinds of Caffiene</NavLink>
+      <NavLink  id = "navbar"to="/CaffeineType">Different Kinds of Caffeine</NavLink>
       <NavLink  id = "navbar"to="/Drinks">Drinks</NavLink>
       <NavLink id = "navbar" to ="/AddDrink">Add a drink here</NavLink>
     </nav>

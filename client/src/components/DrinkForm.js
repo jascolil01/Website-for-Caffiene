@@ -57,10 +57,10 @@ useEffect(()=>{
 
         <img src={info.image}/>
         <h1>Name of the drink: {info.name}</h1>
-        <h2>Caffiene Type: {info.typeOfCaffiene}</h2>
+        <h2>Caffeine Type: {info.typeOfCaffeine}</h2>
         <h2>How good is it? {info.levelOfEffectiveness}/5</h2>
         <h2>Description: {info.description}</h2>
-        <h2>How much Caffiene: {info.caffieneLevel}</h2>
+        <h2>How much Caffeine: {info.caffeineLevel}</h2>
 
       </div>
         

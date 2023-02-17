@@ -6,8 +6,8 @@ export default function AddDrink() {
     name:'',
     description:'',
     image:'',
-    typeOfCaffiene:'',
-    caffieneLevel:'',
+    typeOfCaffeine:'',
+    caffeineLevel:'',
     levelOfEffectiveness:'',
   }
   const [formState, setFormState] = useState(initialState)
@@ -29,12 +29,15 @@ export default function AddDrink() {
 
       <label htmlFor='description'>Tell us about the drink</label>
       <textarea id="description" cols="30" rows="10"onChange={handleChange} value={formState.description}></textarea>
-
+      
+      <div>
       <label htmlFor='image'>Image:</label>
       <input type="text"  placeholder="copy an image url and place it here" id="image"onChange={handleChange} value={formState.image}/>
+      </div>
+      
 
-      <label htmlFor='typeOfCaffiene'>Name of the Drink</label>
-      <select id ="typeOfCaffiene"onChange={handleChange} value={formState.typeOfCaffiene}>
+      <label htmlFor='typeOfCaffeine'>Name of the Drink</label>
+      <select id ="typeOfCaffeine"onChange={handleChange} value={formState.typeOfCaffeine}>
         <option value="Coffee">Coffee</option>
         <option value="Tea">Tea</option>
         <option value="Energy Drink">Energy Drink</option>
@@ -42,8 +45,8 @@ export default function AddDrink() {
         <option value="Soda">Soda</option>
       </select>
      
-      <label htmlFor='caffieneLevel'>Amount of caffiene</label>
-      <input type="text" id="caffieneLevel"onChange={handleChange} value={formState.caffieneLevel}/>
+      <label htmlFor='caffeineLevel'>Amount of caffeine</label>
+      <input type="text" id="caffeineLevel"onChange={handleChange} value={formState.caffeineLevel}/>
 
       <label htmlFor='levelOfEffectiveness'>How well did it work?</label>
       <select id ="levelOfEffectiveness"onChange={handleChange} value={formState.levelOfEffectiveness}>
