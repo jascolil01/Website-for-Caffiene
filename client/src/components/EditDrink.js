@@ -45,7 +45,7 @@ const handleUpdate=async()=>{
       </div>
       
 
-      <label htmlFor='typeOfCaffeine'>Name of the Drink</label>
+      <label htmlFor='typeOfCaffeine'>What kind of caffeine is it?</label>
       <select id ="typeOfCaffeine"onChange={handleChange} value={formState.typeOfCaffeine}>
         <option value="Coffee">Coffee</option>
         <option value="Tea">Tea</option>
