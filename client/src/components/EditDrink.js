@@ -57,14 +57,14 @@ const handleUpdate=async()=>{
       <label htmlFor='caffeineLevel'>Amount of caffeine</label>
       <input type="text" id="caffeineLevel"onChange={handleChange} value={formState.caffeineLevel}/>
 
-      <label htmlFor='levelOfEffectiveness'>How well did it work?</label>
+      <label htmlFor='levelOfEffectiveness'>How would you rate this drink??</label>
       <select id ="levelOfEffectiveness"onChange={handleChange} value={formState.levelOfEffectiveness}>
       <option value="">select</option>
-        <option value="1">☕️</option>
-        <option value="2">☕️☕️</option>
-        <option value="3">☕️☕️☕️</option>
-        <option value="4">☕️☕️☕️☕️</option>
-        <option value="5">☕️☕️☕️☕️☕️</option>
+        <option value="☕️">☕️</option>
+        <option value="☕️☕️">☕️☕️</option>
+        <option value="☕️☕️☕️">☕️☕️☕️</option>
+        <option value="☕️☕️☕️☕️">☕️☕️☕️☕️</option>
+        <option value="☕️☕️☕️☕️☕️">☕️☕️☕️☕️☕️</option>
       </select>
      
       <button type='submit'> Remake it!</button>

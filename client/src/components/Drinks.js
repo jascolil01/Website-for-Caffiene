@@ -10,7 +10,7 @@ export default function Drinks(props) {
 
  
   return (
-    <div id="drinkList">
+  <div id="drinkList">
     {props.drinks.map((drink)=>(
       <div id="drink" className={drink.typeOfCaffeine} key={drink._id}>
         <img src={drink.image}/>
@@ -31,7 +31,7 @@ export default function Drinks(props) {
      
       </div>
     ))}
-    </div>
+  </div>
       
   )
 }

@@ -4,9 +4,11 @@
 
 # About
 
-This is my repo for the website I built in **MERN (Mongo, Express, React, Nodejs)** format. This is my first time building a fullstack website on my own so if you have any suggestions on improvements reach out to me!
+Hello, I am Joshua Ascolillo. This is my repo for the website I built in **MERN (Mongo, Express, React, Nodejs)** format. This is my first time building a fullstack website on my own so if you have any suggestions on improvements reach out to me!
 
 # Functionality
+
+[Navigate to the website here]()
 
 This page allows you to see What caffeines about, the different kinds of caffeine, look at some drinks and even CRUD (Create, Read, Update, Delete) your own drinks. Lastly, you can even leave comments on your favorite drinks. this is acheived through backend routes and through functions built in on the front end to call upon these routes. there is a functional navigation bar that allows you to click through all the pages availible.
 

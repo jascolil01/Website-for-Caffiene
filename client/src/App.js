@@ -31,20 +31,20 @@ const App=()=> {
     getDrink()
   }, [])
   return (
-<div className='app'>
-  <header><NavBar/></header>
-  <main>
-  <Routes>
-      <Route path="/" element ={<Home/>}/>
-      <Route path="/About" element ={<About/>}/>
-      <Route path="/CaffeineType" element ={<CaffeineType drinks={drinks}/>}/>
-      <Route path="/DrinkForm/:id" element ={<DrinkForm drinks={drinks}/>}/>
-      <Route path="/EditDrink/:id" element ={<EditDrink />}/>
-      <Route path="/Drinks" element ={<Drinks getDrink={getDrink} drinks={drinks}/>}/>
-      <Route path="/AddDrink" element ={<AddDrink getDrink={getDrink}/>}/>
-    </Routes>
-  </main>
-</div>
+  <div className='app'>
+    <header><NavBar/></header>
+    <main>
+    <Routes>
+        <Route path="/" element ={<Home/>}/>
+        <Route path="/About" element ={<About/>}/>
+        <Route path="/CaffeineType" element ={<CaffeineType drinks={drinks}/>}/>
+        <Route path="/DrinkForm/:id" element ={<DrinkForm drinks={drinks}/>}/>
+        <Route path="/EditDrink/:id" element ={<EditDrink />}/>
+        <Route path="/Drinks" element ={<Drinks getDrink={getDrink} drinks={drinks}/>}/>
+        <Route path="/AddDrink" element ={<AddDrink getDrink={getDrink}/>}/>
+      </Routes>
+    </main>
+  </div>
   )
 }
 

@@ -52,48 +52,44 @@ useEffect(()=>{
 
   
   return (
-    <div className='info-page'>
+  <div className='info-page'>
       <div className='info-section'>
-
         <img src={info.image}/>
         <h1>Name of the drink: {info.name}</h1>
         <h2>Caffeine Type: {info.typeOfCaffeine}</h2>
         <h2>How good is it? {info.levelOfEffectiveness}/5</h2>
         <h2>Description: {info.description}</h2>
         <h2>How much Caffeine: {info.caffeineLevel}</h2>
-
       </div>
-        
-
-  <form className="comments"onSubmit={handleSubmit}>
   
-  <label htmlFor="name">Name:</label>
-  <input
-    type="text"
-    id="name"
-    onChange={handleChange}
-    value={formState.name}
-  />
-  <label htmlFor="comment">Write a comment here!</label>
-  <textarea
-    id="comment"
-    cols="30"
-    rows="10"
-    onChange={handleChange}
-    value={formState.comment}
-  ></textarea>
-  <button type="submit">Send</button>
-  <container>
-    {comment.map((x)=>(
-  <div className='comment' key={x._id}>
-    <h3>Name: {x.name}</h3>
-    <h4>Comment: {x.comment}</h4>
-    <button onClick={()=> handleDelete(x._id)}>Delete</button>
-  </div>
-))}
-  </container>
+    <form className="comments"onSubmit={handleSubmit}>
+    <label htmlFor="name">Name:</label>
+    <input
+      type="text"
+      id="name"
+      onChange={handleChange}
+      value={formState.name}
+    />
+    <label htmlFor="comment">Write a comment here!</label>
+    <textarea
+      id="comment"
+      cols="30"
+      rows="10"
+      onChange={handleChange}
+      value={formState.comment}
+    ></textarea>
+    <button type="submit">Send</button>
+    <container>
+      {comment.map((x)=>(
+    <div className='comment' key={x._id}>
+      <h3>Name: {x.name}</h3>
+      <h4>Comment: {x.comment}</h4>
+      <button onClick={()=> handleDelete(x._id)}>Delete</button>
+    </div>
+      ))}
+    </container>
 
-</form>
-     </div>
+    </form>
+  </div>
   )
 }

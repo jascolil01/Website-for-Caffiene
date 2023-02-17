@@ -15,7 +15,6 @@ export default function CaffieneType(props) {
       <p> Tea is the second most consumed drink in the world, surpassed only by water. An often-surprising fact to tea novices is that all teas (Black, Green, Oolong, White, and Pu'erh) come from the same plant.<a href="https://www.teaclass.com/lesson_0101.html">Link to article</a></p>
       <h1 className="caff-info">Soda</h1>
       <p>is a drink that usually contains water (often carbonated), a sweetener, and a natural and/or artificial flavoring. The sweetener may be a sugar, high-fructose corn syrup, fruit juice, a sugar substitute (in the case of diet drinks), or some combination of these. Soft drinks may also contain caffeine, colorings, preservatives, and/or other ingredients.<a href="https://en.wikipedia.org/wiki/Soft_drink">Link to article</a></p>
-     
     </div>
   )
 }
