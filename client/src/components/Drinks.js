@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 export default function Drinks(props) {
   const handleDelete = async(drinkId) =>{
-    await axios.delete(`http://localhost:3001/api/drink/${drinkId}`)
+    await axios.delete(`/api/drink/${drinkId}`)
     props.getDrink()
   }
 

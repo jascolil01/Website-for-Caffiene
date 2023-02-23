@@ -18,7 +18,7 @@ const App=()=> {
 
   const getDrink = async () => {
     try {
-      let res = await axios.get('http://localhost:3001/api/drink')
+      let res = await axios.get('/api/drink')
       setDrinks(res.data.drinks)
     } catch (err) {
       console.log(err)

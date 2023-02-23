@@ -17,11 +17,11 @@ const {id}=useParams()
   const [formState, setFormState] = useState(initialState)
 
  const getDrinkById = async()=>{
-  const res = await axios.get(`http://localhost:3001/api/drink/${id}`)
+  const res = await axios.get(`/api/drink/${id}`)
   setFormState(res.data.drink)
  }
 const handleUpdate=async()=>{
-  await axios.put(`http://localhost:3001/api/drink/${id}`, formState)
+  await axios.put(`/api/drink/${id}`, formState)
 }
   const handleChange = (event) => {
     setFormState({ ...formState, [event.target.id]: event.target.value })

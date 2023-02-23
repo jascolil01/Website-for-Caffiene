@@ -18,12 +18,12 @@ export default function DrinkForm(props) {
  
 
   const getDrinkById = async() =>{
-    const res = await axios.get(`http://localhost:3001/api/drink/${id}`)
+    const res = await axios.get(`/api/drink/${id}`)
     setInfo(res.data.drink)
   }
   const getComment = async () => {
     try {
-      let res = await axios.get(`http://localhost:3001/api/comment/drink/${id}`,comment)
+      let res = await axios.get(`/api/comment/drink/${id}`,comment)
       setComment(res.data)
     } catch (err) {
       console.log(err)
@@ -31,7 +31,7 @@ export default function DrinkForm(props) {
   }
 
   const handleSubmit = async () => {
-    await axios.post(`http://localhost:3001/api/comment`, formState)
+    await axios.post(`/api/comment`, formState)
     setFormState(initialState)
     props.getComment()
   }
@@ -41,7 +41,7 @@ export default function DrinkForm(props) {
   }
   
   const handleDelete = async(commentId) =>{
-    await axios.delete(`http://localhost:3001/api/comment/${commentId}`)
+    await axios.delete(`/api/comment/${commentId}`)
   }
 
 useEffect(()=>{

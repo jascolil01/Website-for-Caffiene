@@ -14,7 +14,7 @@ export default function AddDrink() {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    await axios.post('http://localhost:3001/api/drink', formState)
+    await axios.post('/api/drink', formState)
     setFormState(initialState)
   }
 
