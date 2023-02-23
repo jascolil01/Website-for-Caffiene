@@ -1,4 +1,4 @@
-# Website for Caffeine
+# The Coffee Place
 
 ![Caffeine](https://thumbs.dreamstime.com/b/chemical-formula-caffeine-coffee-beans-background-close-up-100348619.jpg)
 
@@ -14,7 +14,7 @@ This page allows you to see What caffeines about, the different kinds of caffein
 
 # Contact Me
 
-[Linkden](www.linkedin.com/in/joshua-ascolillo)
+[Linkden](https://www.linkedin.com/in/joshuaascolillo/)
 
 jayasco246@gmail.com
 
