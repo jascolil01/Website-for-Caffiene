@@ -8,7 +8,7 @@ export default function Drinks(props) {
     props.getDrink()
   }
 
- 
+  
   return (
   <div id="drinkList">
     {props.drinks.map((drink)=>(
@@ -26,7 +26,7 @@ export default function Drinks(props) {
       pathname:`/EditDrink/${drink._id}`
      }}>Edit</NavLink>
      <button onClick={()=> handleDelete(drink._id)}>Delete</button>
-
+     
      </div>
      
       </div>
