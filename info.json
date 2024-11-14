@@ -2,7 +2,6 @@
     "client A":{
         "name":"josh",
         "age":"6",
-        "address":"21 royal crest drive",
-        "ands":"jsdks"
+        "address":"21 royal crest drive"
     }
 }
